@@ -11,12 +11,12 @@ cuDoubleComplex c = a + b;
 In addition, using an overloaded arithmetic operator with a non-cuComplex structure is allowed. The overloaded operators are written using templates so any standard arithmetic type (int, long, float, double) is allowed and in any order.
 
 ```
-cuDoubleComplex a = make_cuDoubleComplex(1, 2);
+cuFloatComplex a = make_cuFloatComplex(1, 2);
 float b = 7;
 double c = 4
 
-cuDoubleComplex c = a * b;
-cuDoubleComplex d = c / a;
+cuFloatComplex c = a * b;
+cuFloatComplex d = c / a;
 ```
 
 The arthimetic operators will always return the cuComplex structure that was used in the operations. However, mixing cuComplex structures is not currently allowed.
